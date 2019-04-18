@@ -1,12 +1,20 @@
 #include<stdio.h>
 #include<conio.h>
+#include<math.h>
 int main()
 {
-	int PRate,Memor,Page_Fa,Memoe,Pager,Time_To_Modify,Pagr,Tce;
-    float Ef,Pag=100/16.4e6,Tiy=8/1e3;
-	float Tim=20/1e3,Me=100/1e9;Pagr=.7;
-    Ef=(1-PRate)*(Memor)+(Page_Fa)*(Memoe + (1-Pager)*(Time_To_Modify)+(Pagr)*(Tce));
-    printf("%f",Ef);
-    return 0;
-}
-
+float pf,pfn,pm,pmn,mat,succ,success,fail,failure,et,pasr,losr,mr,fn,fi,pn;
+float n=1000000;
+printf("Time For A Page Fault For Empty Page :\n ");
+scanf("%f",&pf);
+pfn=pf*n;
+printf("Time For Modified Page :\n");
+scanf("%f",&pm);
+pmn=pm*n;
+printf("Enter Memory Access Time :\n");
+scanf("%f",&mat);
+printf("Reading Updated Page Percentage :\n");
+scanf("%f",&succ);
+success=succ/100;
+fail=100-succ;
+failure=fail/100;
